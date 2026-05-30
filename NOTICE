@@ -1,0 +1,8 @@
+m-dev-tools-mcp
+Copyright 2026 vista-cloud-dev
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It is the shared Go-CLI scaffold for the m-cli Go toolchain. Go binaries built
+from it are Apache-2.0; VS Code extensions in the toolchain are MIT (per-tier
+license split — see host-side-go-toolchain-adr.md §3.2).

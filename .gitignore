@@ -1,0 +1,19 @@
+# Build output
+/dist/
+/bin/
+*.test
+# coverage report artifacts — specific/anchored so they never match a source
+# file named coverage.go (a broad `coverage.*` silently drops it from commits)
+/coverage.out
+coverage.html
+coverage.txt
+*.lcov
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Claude Code — personal/machine-local permissions (keep settings.json committed)
+.claude/settings.local.json
