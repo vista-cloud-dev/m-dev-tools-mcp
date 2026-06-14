@@ -1,0 +1,9 @@
+{
+  "id": "tool:m-dev-tools-mcp",
+  "repo": "https://github.com/vista-cloud-dev/m-dev-tools-mcp",
+  "role": "MCP server over the `m` toolchain — reflects `m schema` and exposes each command as an MCP tool (spec §5.5)",
+  "language": ["go"],
+  "layer": "m",
+  "license": "AGPL-3.0",
+  "verification_commands": ["go test ./...", "m arch check ."]
+}
