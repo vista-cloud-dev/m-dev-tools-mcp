@@ -1,0 +1,31 @@
+# Pinned lint config — the single source of truth every toolchain Go repo uses.
+# Run: golangci-lint run   (or: make lint)
+run:
+  timeout: 5m
+  tests: true
+
+linters:
+  enable:
+    - errcheck      # unchecked errors
+    - govet         # vet
+    - staticcheck   # the big static analyzer
+    - ineffassign   # ineffectual assignments
+    - unused        # dead code
+    - gofmt         # canonical formatting
+    - goimports     # import grouping/ordering
+    - misspell      # common typos
+    - revive        # style (lightweight golint successor)
+    - unconvert     # redundant conversions
+    - whitespace    # leading/trailing whitespace
+    - bodyclose     # http body closed
+    - errorlint     # error wrapping correctness
+
+linters-settings:
+  goimports:
+    local-prefixes: github.com/vista-cloud-dev
+  misspell:
+    locale: US
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0

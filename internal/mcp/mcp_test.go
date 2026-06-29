@@ -17,7 +17,7 @@ const schemaJSON = `{"schemaVersion":"1.0","tool":"m","version":"1.0","commands"
 
 // fakeRun answers `m schema` with the canned tree and any tool call with a
 // recorded argv echoed back inside a fake envelope.
-func fakeRun(t *testing.T, gotArgv *[]string, exit int, stdout, stderr string) RunFunc {
+func fakeRun(_ *testing.T, gotArgv *[]string, exit int, stdout, stderr string) RunFunc {
 	return func(_ context.Context, _ string, argv []string) ([]byte, []byte, int, error) {
 		if len(argv) > 0 && argv[0] == "schema" {
 			return []byte(schemaJSON), nil, 0, nil
