@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/vista-cloud-dev/m-dev-tools-mcp/clikit"
+	"github.com/vista-cloud-dev/clikit"
 )
 
 // Tool is one MCP tool derived from an `m` command.

@@ -19,7 +19,7 @@ import (
 
 	"github.com/willabides/kongplete"
 
-	"github.com/vista-cloud-dev/m-dev-tools-mcp/clikit"
+	"github.com/vista-cloud-dev/clikit"
 	"github.com/vista-cloud-dev/m-dev-tools-mcp/internal/introspect"
 	"github.com/vista-cloud-dev/m-dev-tools-mcp/internal/mcp"
 )

@@ -15,7 +15,7 @@ import (
 	"io"
 	"os/exec"
 
-	"github.com/vista-cloud-dev/m-dev-tools-mcp/clikit"
+	"github.com/vista-cloud-dev/clikit"
 	"github.com/vista-cloud-dev/m-dev-tools-mcp/internal/introspect"
 )
 

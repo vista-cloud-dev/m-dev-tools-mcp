@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/vista-cloud-dev/m-dev-tools-mcp/clikit"
+	"github.com/vista-cloud-dev/clikit"
 )
 
 func sampleDoc() clikit.SchemaDoc {

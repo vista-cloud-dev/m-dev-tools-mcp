@@ -5,7 +5,7 @@
 
 BIN     ?= m-dev-tools-mcp
 PKG     := github.com/vista-cloud-dev/m-dev-tools-mcp
-LDPKG   := $(PKG)/clikit
+LDPKG   := github.com/vista-cloud-dev/clikit
 VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
 COMMIT  ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo none)
 DATE    ?= $(shell date -u +%Y-%m-%d)
@@ -31,7 +31,7 @@ lint:
 	golangci-lint run ./...
 
 test:
-	go test $(GOFLAGS) -race -cover ./...
+	CGO_ENABLED=1 go test $(GOFLAGS) -race -cover ./...
 
 tidy:
 	go mod tidy
